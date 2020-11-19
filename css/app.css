@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@300;700;900&display=swap");
 /* specification */
 body {
-  background: url(../img/back15.png) 50% no-repeat;
+  background: url(../img/body_bg.png) 50% no-repeat;
   background-attachment: fixed;
-  background-size: 80vw;
+  background-size: 100vw;
+  background-color: #ccc;
   font-family: 'Roboto', sans-serif; }
 
 ul, li {
@@ -30,115 +32,125 @@ h2 {
 .back {
   opacity: .1; }
 
+.ba-container {
+  /* background-image: url(http://pngimg.com/uploads/music_notes/music_notes_PNG6.png);
+	background-repeat: */ }
+
 /* header */
 .header {
-  position: absolute;
-  padding-top: 1rem;
   width: 100%;
-  padding-bottom: 1rem;
-  background: -webkit-gradient(linear, left top, right top, from(white), to(darkviolet));
-  background: -webkit-linear-gradient(left, white 0%, darkviolet 100%);
-  background: -o-linear-gradient(left, white 0%, darkviolet 100%);
-  background: linear-gradient(90deg, white 0%, darkviolet 100%);
   z-index: 100; }
+  .header__container {
+    background-color: #FF7F00;
+    padding: 1rem; }
   .header__logo {
-    width: 200px; }
+    width: 160px;
+    border-radius: 10px; }
   .header__title {
-    font-size: 4rem;
+    font-family: 'Pacifico';
+    font-size: 3rem;
     color: #FFD700;
     margin-bottom: 0; }
   .header__text {
-    font-size: 2rem;
+    font-family: 'Pacifico';
+    font-size: 1.5rem;
     color: #fff;
     text-align: right;
-    /* padding-bottom: 2rem; */ }
+    margin-bottom: 1.5rem; }
+  .header__credo {
+    font-size: 0.8rem;
+    color: #FFFFFF;
+    margin-bottom: 0.5rem; }
+    .header__credo span {
+      font-weight: 700; }
+  .header__menu {
+    padding-top: 1.2rem; }
   .header__menu-item {
     margin: 0 1.5rem; }
     .header__menu-item a {
       color: #fff;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      /* font-family: 'Pacifico'; */ }
       .header__menu-item a:hover {
         box-shadow: 0px 0px 17px 0px gold;
         -webkit-box-shadow: 0px 0px 17px 0px gold;
         -moz-box-shadow: 0px 0px 17px 0px gold; }
       .header__menu-item a:active {
         color: #FFD700; }
-
-/* credo */
-.credo {
-  position: relative;
-  top: 0;
-  height: 100vh;
-  padding-top: 250px;
-  background: -webkit-gradient(linear, left top, right top, from(white), to(darkviolet));
-  background: -webkit-linear-gradient(left, white 0%, darkviolet 100%);
-  background: -o-linear-gradient(left, white 0%, darkviolet 100%);
-  background: linear-gradient(90deg, white 0%, darkviolet 100%); }
-  .credo__img {
-    width: 73%; }
-  .credo__text p {
-    font-size: 2.2rem;
-    font-style: italic;
-    color: #fff; }
-  .credo__text span {
-    color: #FFD700;
-    font-weight: 700; }
+  .header__img {
+    width: 100%; }
 
 /* about */
 .about {
-  background: url(../img/back15.png) 50% no-repeat;
-  background-attachment: fixed;
-  padding-top: 2rem;
-  background-color: #fff; }
+  /* background: url(../img/back15.png) 50% no-repeat;
+	background-attachment: fixed; */
+  /* padding-top: 2rem;
+	padding-bottom: 2.5rem; */ }
+  .about__container {
+    background-color: #FFFFFF;
+    padding-top: 1.5rem;
+    padding-bottom: 3rem; }
   .about__title {
-    font-size: 3rem;
-    color: #9400d3;
+    font-family: 'Pacifico';
+    font-size: 2.2rem;
+    color: #FF7F00;
     margin-bottom: 1.5rem; }
   .about__text {
-    margin-bottom: 1.5rem; }
+    margin-bottom: 2rem;
+    /* font-weight: 700; */ }
+    .about__text b {
+      font-weight: 900;
+      text-transform: uppercase; }
+    .about__text span {
+      font-style: italic;
+      font-weight: 700; }
+  .about__btn {
+    display: block;
+    padding: 10px 12px;
+    margin: 0 auto;
+    border: 0;
+    background-color: #FF7F00;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700; }
+    .about__btn:hover {
+      color: #FFFFFF;
+      background-color: #FF7F00;
+      opacity: .7; }
+    .about__btn:visited {
+      color: #FFFFFF;
+      background-color: #FF7F00; }
 
 /* experience */
-.experience {
+.experience__container {
+  background-color: #FF7F00;
   padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  background: -webkit-gradient(linear, left top, right top, from(white), to(darkviolet));
-  background: -webkit-linear-gradient(left, white 0%, darkviolet 100%);
-  background: -o-linear-gradient(left, white 0%, darkviolet 100%);
-  background: linear-gradient(90deg, white 0%, darkviolet 100%); }
-  .experience__img {
-    width: 100%; }
-  .experience__title {
-    font-size: 3rem;
-    font-weight: 700;
-    color: #FFD700; }
-  .experience__text {
-    color: #fff; }
+  padding-bottom: 3rem; }
+
+.experience__img {
+  width: 100%; }
+
+.experience__title {
+  font-family: 'Pacifico';
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #FFFFFF; }
+
+.experience__text {
+  color: #fff; }
 
 /* gallery */
-.gallery {
+.gallery__container {
+  background-color: #FFFFFF;
   padding-top: 1.5rem;
-  padding-bottom: 1.5rem; }
-  .gallery__title {
-    font-size: 3rem;
-    font-weight: 700;
-    color: #9400d3;
-    margin-bottom: 1.5rem; }
+  padding-bottom: 3rem; }
 
-.docs__title {
-  font-size: 2rem;
-  color: #9400d3;
-  text-align: center;
-  font-weight: 700; }
-
-.modal-body {
-  padding-top: 1rem;
-  padding-bottom: 1rem; }
-  .modal-body h4 {
-    font-size: 1.8rem; }
-  .modal-body p span {
-    font-weight: 700; }
-  .modal-body hr {
-    margin-bottom: 1.5rem; }
+.gallery__title {
+  font-family: 'Pacifico';
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #FF7F00;
+  margin-bottom: 1.5rem; }
 
 .middlesssss {
   padding-top: 1rem;
@@ -155,14 +167,29 @@ h2 {
   width: 120px;
   margin: 0 auto; }
 
+.docs__container {
+  background: -webkit-gradient(linear, left top, right top, from(#FFFFFF), to(#FF7F00));
+  background: -webkit-linear-gradient(left, #FFFFFF 0%, #FF7F00 100%);
+  background: -o-linear-gradient(left, #FFFFFF 0%, #FF7F00 100%);
+  background: linear-gradient(90deg, #FFFFFF 0%, #FF7F00 100%);
+  padding-top: 2rem;
+  padding-bottom: 3rem; }
+
+.docs__title {
+  font-family: 'Pacifico';
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #FF7F00;
+  margin-bottom: 1.5rem; }
+
+.docs__img {
+  width: 70%; }
+
 /* footer */
-.footer {
+.footer__container {
+  background-color: #FF7F00;
   padding-top: 3rem;
-  padding-bottom: 3rem;
-  background: -webkit-gradient(linear, left top, right top, from(white), to(darkviolet));
-  background: -webkit-linear-gradient(left, white 0%, darkviolet 100%);
-  background: -o-linear-gradient(left, white 0%, darkviolet 100%);
-  background: linear-gradient(90deg, white 0%, darkviolet 100%); }
+  padding-bottom: 3rem; }
 
 /* media queries */
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -381,3 +408,52 @@ h2 {
     color: #9400d3;
     text-align: center;
     font-weight: 700; } }
+
+@media (min-width: 320px) and (max-width: 575.98px) {
+  .header {
+    position: absolute;
+    padding-top: 1rem;
+    width: 100%;
+    padding-bottom: 1rem;
+    background: -webkit-gradient(linear, left top, right top, from(white), to(darkviolet));
+    background: -webkit-linear-gradient(left, white 0%, darkviolet 100%);
+    background: -o-linear-gradient(left, white 0%, darkviolet 100%);
+    background: linear-gradient(90deg, white 0%, darkviolet 100%);
+    z-index: 100; }
+    .header__logo {
+      width: 85px; }
+    .header__title {
+      font-size: 1.4rem; }
+    .header__text {
+      font-size: 1rem; }
+    .header__menu-item {
+      margin: 0 1.5rem; }
+      .header__menu-item a {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 0.7rem; }
+        .header__menu-item a:hover {
+          box-shadow: 0px 0px 17px 0px gold;
+          -webkit-box-shadow: 0px 0px 17px 0px gold;
+          -moz-box-shadow: 0px 0px 17px 0px gold; }
+        .header__menu-item a:active {
+          color: #FFD700; }
+  /* credo */
+  .credo {
+    position: relative;
+    top: 0;
+    height: inherit;
+    padding-top: 200px;
+    background: -webkit-gradient(linear, left top, right top, from(white), to(darkviolet));
+    background: -webkit-linear-gradient(left, white 0%, darkviolet 100%);
+    background: -o-linear-gradient(left, white 0%, darkviolet 100%);
+    background: linear-gradient(90deg, white 0%, darkviolet 100%); }
+    .credo__img {
+      width: 40%; }
+    .credo__text p {
+      font-size: 0.8rem;
+      font-style: italic;
+      color: #fff; }
+    .credo__text span {
+      color: #FFD700;
+      font-weight: 700; } }
