@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@300;700;900&display=swap');
 
+$main-color: #FF7F00;
+$title-color: #FFD700;
 
 /* specification */
 body{
@@ -32,6 +34,9 @@ h3{
 h2{
 	text-align: center;
 }
+p {
+	letter-spacing: 1px;
+}
 .back {
 	opacity: .1;
 
@@ -47,7 +52,7 @@ h2{
 	width: 100%;
 	z-index: 100;
 	&__container {
- 		background-color: #FF7F00;
+ 		background-color: $main-color;
  		padding: 1rem;
 	}
 	&__logo {
@@ -57,7 +62,7 @@ h2{
 	&__title {
 		font-family: 'Pacifico';
 		font-size: 3rem;
-		color: #FFD700;
+		color: $title-color;
 		margin-bottom: 0;
 	}
 	&__text {
@@ -90,7 +95,7 @@ h2{
 				-moz-box-shadow:0px 0px 17px 0px rgba(255,215,0,1);
 			}
 			&:active {
-				color: #FFD700;
+				color: $title-color;
 			}
 		}
 	}
@@ -114,7 +119,7 @@ h2{
 	&__title {
 		font-family: 'Pacifico';
 		font-size: 2.2rem;
-		color: #FF7F00;
+		color: $main-color;
 		margin-bottom: 1.5rem;
 	}
 	&__text {
@@ -134,18 +139,18 @@ h2{
 		padding: 10px 12px;
 		margin: 0 auto;
 		border: 0; 
-		background-color: #FF7F00;
+		background-color: $main-color;
 		color: #fff;
 		text-transform: uppercase;
 		font-weight: 700;
 		&:hover {
 			color: #FFFFFF;
-			background-color: #FF7F00;
+			background-color: $main-color;
 			opacity: .7;
 		}
 		&:visited {
 			color: #FFFFFF;
-			background-color: #FF7F00;
+			background-color: $main-color;
 		}
 	}
 }
@@ -154,7 +159,7 @@ h2{
 /* experience */
 .experience {
 	&__container {
-		background-color: #FF7F00;
+		background-color: $main-color;
 		padding-top: 1.5rem;
 		padding-bottom: 3rem;
 	}
@@ -184,7 +189,7 @@ h2{
 		font-family: 'Pacifico';
 		font-size: 2.2rem; 
 		font-weight: 700;
-		color: #FF7F00;
+		color: $main-color;
 		margin-bottom: 1.5rem;
 	}
 }
@@ -212,7 +217,7 @@ h2{
 
 .docs {
 	&__container {
-		background: linear-gradient(90deg, #FFFFFF 0%, #FF7F00 100%);
+		background: linear-gradient(90deg, #FFFFFF 0%, $main-color 100%);
 		padding-top: 2rem;
 		padding-bottom: 3rem;
 	}
@@ -220,7 +225,7 @@ h2{
 		font-family: 'Pacifico';
 		font-size: 2.2rem; 
 		font-weight: 700;
-		color: #FF7F00;
+		color: $main-color;
 		margin-bottom: 1.5rem;
 	}
 	&__img {
@@ -232,7 +237,7 @@ h2{
 /* footer */
 .footer {
 	&__container {
-		background-color: #FF7F00;
+		background-color: $main-color;
 		padding-top: 3rem;
 		padding-bottom: 3rem;
 	}
@@ -347,7 +352,7 @@ h2{
 .docs {
 	&__title {
 		font-size: 2rem;
-		color: #9400d3;
+		color: $main-color;
 		text-align: center;
 		font-weight: 700;
 	}
@@ -464,7 +469,7 @@ h2{
 	&__title {
 		font-size: 2rem;
 		text-align: center;
-		color: #FFD700;
+		color: $title-color;
 		margin-bottom: 0;
 	}
 	&__text {
@@ -504,7 +509,7 @@ h2{
 	background-color: #fff;
 	&__title {
 		font-size: 1.8rem;
-		color: #9400d3;
+		color: $main-color;
 		margin-bottom: 1rem;
 	}
 	&__text {
@@ -546,7 +551,7 @@ h2{
 .docs {
 	&__title {
 		font-size: 1.5rem;
-		color: #9400d3;
+		color: $main-color;
 		text-align: center;
 		font-weight: 700;
 	}
@@ -561,7 +566,7 @@ h2{
 	padding-top: 1rem;
 	width: 100%;
 	padding-bottom: 1rem;
-	background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(148,0,211,1) 100%);
+	background: linear-gradient(90deg, #FFFFFF 0%, $main-color 100%);
 	z-index: 100;
 	&__logo {
 		width: 85px;
@@ -584,33 +589,117 @@ h2{
 				-moz-box-shadow:0px 0px 17px 0px rgba(255,215,0,1);
 			}
 			&:active {
-				color: #FFD700;
+				color: $title-color;
 			}
 		}
 	}
 }
-
-
-/* credo */
-.credo {
-	position: relative;
-	top: 0;
-	height: inherit;
-	padding-top: 200px;
-	background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(148,0,211,1) 100%);
-	&__img {
-		width: 40%;
-	}
-	&__text {
-		p {
-			font-size: 0.8rem;
-			font-style: italic;
-			color: #fff;
-		}
-		span {
-			color: #FFD700;
-			font-weight: 700;
-		}
-	}
 }
+
+@media (min-width: 250px) and (max-width: 319px) {
+	.header {
+		padding: 0;
+		&__container {
+			padding-right: 0.3rem;
+			padding-left: 0.3rem;
+		}
+		&__title {
+			font-size: 1.75rem;
+		}
+		&__text {
+			font-size: 1.2rem;
+			margin-bottom: 1.5rem;
+		}
+		&__menu {
+			justify-content: space-between;
+			padding-top: 0;
+			margin-bottom: 0.7rem;
+		}
+		&__menu-item {
+			display: block;
+			margin: 0.1rem;
+		}
+		&__menu-item a {
+			font-size: 0.55rem;
+			font-weight: 700;
+			text-decoration: underline;
+		}
+		&__img {
+			display: block;
+			width: 40%;
+			margin: 0 auto;
+		}
+	}
+	.about {
+		padding: 0;
+		&__title {
+			font-size: 1.4rem;
+		}
+		&__text {
+			font-size: 0.85rem;
+			color: #000000;
+			text-align: left !important;
+		}
+		p:last-of-type {
+			margin-bottom: 2rem;
+		}
+		&__btn {
+			font-size: 0.65rem;
+			letter-spacing: 0.2rem;
+		}
+	}
+	.experience {
+		padding: 0;
+		&__title {
+			font-size: 1.4rem;
+			margin-bottom: 1rem;
+		}
+		&__img-wrapper {
+			padding: 0 !important;
+		}
+		&__img {
+			width: 60%;
+			margin: 0 auto 1rem;
+		}
+		&__text {
+			font-size: 0.85rem;
+			text-align: left;
+		}
+	}
+	.gallery {
+		padding: 0;
+		&__title {
+			font-size: 1.4rem;
+		}
+	}
+	.docs {
+		&__container {
+			background: linear-gradient(180deg, #FFFFFF 0%, $main-color 100%);
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+		&__img {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+	.sorry {
+		padding-top: 0;
+		font-size: 0.85rem;
+		p:first-of-type {
+			text-align: center;
+			border: 1px solid red;
+		}
+	}
+	.attantion {
+		font-size: 1rem !important;
+		line-height: 1.2;
+		
+	}
+	.no_mgn {
+		margin-left: 0;
+	}
+	.smile {
+		display: none;
+	}
 }
