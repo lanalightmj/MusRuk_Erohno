@@ -76,9 +76,16 @@ p {
 		font-size: 0.8rem;
 		color: #FFFFFF;
 		margin-bottom: 0.5rem;
+		overflow: hidden;
+		letter-spacing: 2px;
 		span {
 			font-weight: 700;
 		}
+	}
+	nav {
+		display: block;
+		width: 60%;
+		margin: 0 auto;
 	}
 	&__menu {
 		padding-top: 1.2rem;
@@ -247,30 +254,33 @@ p {
 /* media queries */
 @media (min-width: 992px) and (max-width: 1199.98px) {
 	.header{
+		padding: 0.5rem 1rem 0.5rem;
+		&__container {
+			border-radius: 15px;
+		}
 		&__title {
 			font-size: 3.2rem;
 			line-height: 4rem;
+			padding-left: 1rem;
 		}
 		&__menu {
 			padding-top: 0.5rem;
 		}
 	}
-	.credo {
-		height: inherit;
-		padding-top: 230px;
-		padding-bottom: 2rem;
-		&__text {
-			p {
-				font-size: 1.5rem;
-			}
+	.about,
+	.experience,
+	.docs,
+	.footer {
+		padding: 0.5rem 1rem 0.5rem;
+		&__container {
+			border-radius: 15px;
 		}
-		&__img {
-			display: block;
-			margin: 0 auto;
-		}
-
 	}
 	.gallery {
+		padding: 0.5rem 1rem 0.5rem;
+		&__container {
+			border-radius: 15px;
+		}
 		&__btn {
 			display: block;
 			width: 80%;
@@ -281,11 +291,15 @@ p {
 		margin-top:1.5rem;
 		padding-top: 0;
 	}
+
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
 	.header {
-		height: inherit;
+		padding: 0.5rem 1rem 0.5rem;
+		&__container {
+			border-radius: 15px;
+		}
 		&__title {
 			font-size: 2.3rem;
 			padding-left: 2rem;
@@ -294,306 +308,344 @@ p {
 		&__text {
 			font-size: 1.8rem;
 		}
+		nav {
+			display: block;
+			width: 100%;
+			margin: 0 auto;
+		}
 		&__menu {
 			margin-left: 2.5rem;
 		}
 		&__menu-item {
-			margin-left: 1rem;
-			margin-right: 1rem;
 			a {
 				font-size: 0.8rem;
 			}
 		}
-		&__item {
-			
-		}
-	}
-	.credo {
-		padding-top: 200px;
-		img {
-			width: 100%;
-		}
-		p{
-			font-size: 1.3rem;
-		}
 	}
 	.about {
-		padding-bottom: 1.5rem;
-	&__title {
-		font-size: 2rem;
-		margin-bottom: 1.2rem;
+		padding: 0.5rem 1rem 0.5rem;
+		&__container {
+			border-radius: 15px;
+		}
+		&__title {
+			font-size: 2rem;
+			margin-bottom: 1.2rem;
+		}
+		&__text {
+			margin-bottom: 1rem;
+		}
 	}
-	&__text {
-		margin-bottom: 1rem;
-	}
-}
 	.experience {
-	&__img {
-		display: block;
-		width: 60%;
-		margin: 0 auto 1rem;
+		padding: 0.5rem 1rem 0.5rem;
+		&__container {
+			border-radius: 15px;
+		}
+		&__img {
+			display: block;
+			width: 60%;
+			margin: 0 auto 1rem;
+		}
+		&__title {
+			font-size: 2rem;
+			margin: 0;
+		}
 	}
-	&__title {
-		font-size: 2rem;
-		margin: 0;
+	.gallery {
+		padding: 0.5rem 1rem 0.5rem;
+		&__container {
+			border-radius: 15px;
+		}
+		&__title {
+			font-size: 2rem; 
+			margin-bottom: 1.5rem;
+		}
+		&__carousel {
+			margin-bottom: 1.5rem;
+		}
 	}
-}
-.gallery {
-	padding-top: 1.7rem;
-	padding-bottom: 1.7rem;
-	&__title {
-		font-size: 2rem; 
-		margin-bottom: 1.5rem;
+	.docs {
+		padding: 0.5rem 1rem 0.5rem;
+		&__container {
+			background: linear-gradient(180deg, #FFFFFF 20%, $main-color 100%);
+			border-radius: 15px;
+		}
+		&__title {
+			font-size: 2rem;
+			color: $main-color;
+			text-align: center;
+			font-weight: 700;
+		}
+		&__img {
+			display: block;
+			width: 30%;
+			margin: 0 auto;
+		}
 	}
-	&__carousel {
-		margin-bottom: 1.5rem;
+	.smile {
+		display: none;
 	}
-}
-.docs {
-	&__title {
-		font-size: 2rem;
-		color: $main-color;
-		text-align: center;
-		font-weight: 700;
+	.footer {
+		padding: 0.5rem 1rem 0.5rem;
+		&__container {
+			border-radius: 15px;
+		}
 	}
-}
 }
 
  
 
 @media (min-width: 576px) and (max-width: 767.98px) {
 	.header {
-	padding-top: 1rem;
-	padding-bottom: 1rem;
-
-	&__logo {
-		display: block;
-		margin: 0 auto;
-		width: 120px;
-	}
-	&__title {
-		font-size: 2rem;
-		text-align: center;
-		margin-bottom: 0;
-	}
-	&__text {
-		font-size: 1.5rem;
-		text-align: center;
-	}
-	&__menu {
-		justify-content: center;
-	}
-	&__menu-item {
-		margin: 0 1.5rem;
-		a {
-			font-size: 0.7rem;
+		padding: 1.5rem 2rem 0.75rem;
+		&__container {
+			border-radius: 20px;
 		}
-	}
-}
-.credo {
-	height: inherit;
-	padding-top: 250px;
-	padding-bottom: 1.7rem;
-	&__img {
-		display: block;
-		margin: 0 auto 1.3rem;
-		width: 50%;
-	}
-	&__text {
-		p {
-			font-size: 1rem;
+		&__logo {
+			display: block;
+			margin: 1rem auto 1rem;
+			width: 30%;
+		}
+		&__title {
+			font-size: 2rem;
 			text-align: center;
-			line-height: 1.2rem;
+			margin-bottom: 0;
 		}
-	}
-}
-.about {
-	padding: 2rem 1.6rem;
-	&__title {
-		font-size: 2rem;
-		margin-bottom: 1rem;
-	}
-	&__text {
-		margin-bottom: 1rem;
-	}
-}
-.experience {
-	padding: 2rem 1.6rem;
-	&__img {
-		display: block;
-		width: 50%;
-		margin: 0 auto 1.3rem;
-	}
-	&__title {
-		font-size: 2rem; 
-	}
-	&__text-block {
-		margin: 0;
-	}
-	&__text {
-		text-align: center;
-	}
-}
-.gallery {
-	padding: 2rem 1.6rem;
-	&__title {
-		font-size: 2rem; 
-	}
-	&__carousel {
-		margin-bottom: 1.5rem;
-	}
-	&__btn {
-		display: block;
-		width: 50%;
-		margin: 0 auto 1rem;
-	}
-}
-.docs {
-	&__title {
-		font-size: 1.8rem;
-		text-align: center;
-		margin-bottom: 1.3rem;
-	}
-}
-
-}
-@media (max-width: 575.98px) {
-	.header {
-	padding-top: 1rem;
-	padding-bottom: 1rem;
-	&__logo {
-		display: block;
-		margin: 0 auto;
-		width: 120px;
-	}
-	&__title {
-		font-size: 2rem;
-		text-align: center;
-		color: $title-color;
-		margin-bottom: 0;
-	}
-	&__text {
-		font-size: 1.5rem;
-		text-align: center;
-		/* padding-bottom: 2rem; */
-	}
-	&__menu {
-		justify-content: center;
-	}
-	&__menu-item {
-		margin: 0 1.5rem;
-		a {
-			font-size: 0.7rem;
-		}
-	}
-}
-.credo {
-	height: inherit;
-	padding-top: 250px;
-	padding-bottom: 1.3rem;
-	&__img {
-		display: block;
-		margin: 0 auto 1.3rem;
-		width: 50%;
-	}
-	&__text {
-		p {
-			font-size: 1rem;
+		&__text {
+			font-size: 1.5rem;
 			text-align: center;
-			line-height: 1.2rem;
+		}
+		nav {
+			display: block;
+			width: 100%;
+			margin: 0 auto;
+		}
+		&__menu {
+			justify-content: center;
+		}
+		&__menu-item {
+			margin: 0 1.5rem;
+			a {
+				font-size: 0.7rem;
+				text-decoration: underline;
+			}
+		}
+		&__img {
+			display: block;
+			width: 25%;
+			margin: 1rem auto 1rem;
 		}
 	}
-}
-.about {
-	padding: 2rem 1.6rem;
-	background-color: #fff;
-	&__title {
-		font-size: 1.8rem;
-		color: $main-color;
-		margin-bottom: 1rem;
+	.about {
+		padding: 1.5rem 2rem 0.75rem;
+		&__container {
+			border-radius: 20px;
+		}
+		&__title {
+			font-size: 2rem;
+			margin-bottom: 1rem;
+		}
+		&__text {
+			margin-bottom: 1rem;
+		}
 	}
-	&__text {
-		margin-bottom: 0.7rem;
+	.experience {
+		padding: 1.5rem 2rem 0.75rem;
+		&__container {
+			border-radius: 20px;
+		}
+		&__img {
+			display: block;
+			width: 50%;
+			margin: 0 auto 1.3rem;
+		}
+		&__title {
+			font-size: 2rem; 
+		}
+		&__text-block {
+			margin: 0;
+		}
+		&__text {
+			text-align: center;
+		}
 	}
-}
-.experience {
-	padding: 2rem 1.6rem;
-	&__img {
-		display: block;
-		margin: 0 auto 1rem;
-		width: 40%;
+	.gallery {
+		padding: 1.5rem 2rem 0.75rem;
+		&__container {
+			border-radius: 20px;
+		}
+		&__title {
+			font-size: 2rem; 
+		}
+		&__carousel {
+			margin-bottom: 1.5rem;
+		}
+		&__btn {
+			display: block;
+			width: 50%;
+			margin: 0 auto 1rem;
+		}
 	}
-	&__title {
-		font-size: 1.8rem;
-		margin: 0;
+	.docs {
+		padding: 1.5rem 2rem 0.75rem;
+		&__container {
+			border-radius: 20px;
+		}
+		&__title {
+			font-size: 1.8rem;
+			text-align: center;
+			margin-bottom: 1.3rem;
+		}
+		&__img {
+			display: block;
+			width: 40%;
+			margin: 0 auto;
+		}
 	}
-	&__text-block {
-		margin: 0;
+	.smile {
+		display: none;
 	}
-	&__text {
-		text-align: center;
+	.footer {
+		padding: 1.5rem 2rem 0.75rem;
+		&__container {
+			border-radius: 20px;
+		}
 	}
-}
-.gallery {
-	padding: 2rem 1.6rem;
-	&__title {
-		font-size: 1.8rem; 
-	}
-	&__carousel {
-		margin-bottom: 1.5rem;
-	}
-	&__btn {
-		display: block;
-		width: 70%;
-		margin: 1rem auto;
-	}
-}
-.docs {
-	&__title {
-		font-size: 1.5rem;
-		color: $main-color;
-		text-align: center;
-		font-weight: 700;
-	}
-}
-
 }
 
 
 @media (min-width: 320px) and (max-width: 575.98px) {
 	.header {
-	position: absolute;
-	padding-top: 1rem;
-	width: 100%;
-	padding-bottom: 1rem;
-	background: linear-gradient(90deg, #FFFFFF 0%, $main-color 100%);
-	z-index: 100;
-	&__logo {
-		width: 85px;
-	}
-	&__title {
-		font-size: 1.4rem;
-	}
-	&__text {
-		font-size: 1rem;
-	}
-	&__menu-item {
-		margin: 0 1.5rem;
-		a {
-			color: #fff;
-			text-transform: uppercase;
-			font-size: 0.7rem;
-			&:hover {
-				box-shadow:0px 0px 17px 0px rgba(255,215,0,1);
-				-webkit-box-shadow:0px 0px 17px 0px rgba(255,215,0,1);
-				-moz-box-shadow:0px 0px 17px 0px rgba(255,215,0,1);
-			}
-			&:active {
-				color: $title-color;
-			}
+		padding: 0;
+		width: 100%;
+		z-index: 100;
+		&__container {
+			padding: 1rem 1.75rem 1.75rem;
+		}
+		&__logo {
+			display: block;
+			margin: 0 auto 1rem;
+			width: 40%;
+		}
+		&__title {
+			font-size: 1.75rem;
+			text-align: center;
+			color: $title-color;
+			margin-bottom: 0;
+		}
+		&__text {
+			font-size: 1.3rem;
+			text-align: center;
+		}
+		nav {
+			display: block;
+			width: 100%;
+			margin: 0 auto;
+		}
+		&__menu {
+			justify-content: space-between;
+			padding-top: 0;
+			margin-bottom: 0.7rem;
+		}
+		&__menu-item {
+			display: block;
+			margin: 0.1rem;
+		}
+		&__menu-item a {
+			font-size: 0.65rem;
+			font-weight: 700;
+			text-decoration: underline;
+		}
+		&__img {
+			display: block;
+			width: 30%;
+			margin: 0 auto;
 		}
 	}
-}
+	.about {
+		padding: 2rem 1.6rem;
+		background-color: #fff;
+		&__container {
+			padding: 0;
+		}
+		&__title {
+			font-size: 1.4rem;
+		}
+		&__text {
+			font-size: 0.85rem;
+			color: #000000;
+			text-align: left !important;
+		}
+		p:last-of-type {
+			margin-bottom: 2rem;
+		}
+		&__btn {
+			font-size: 0.65rem;
+			letter-spacing: 0.2rem;
+		}
+	}
+	.experience {
+		padding: 0;
+		&__title {
+			font-size: 1.4rem;
+			margin-bottom: 1rem;
+		}
+		&__img-wrapper {
+			padding: 0 !important;
+		}
+		&__img {
+			display: block;
+			width: 60%;
+			margin: 0 auto 1rem;
+		}
+		&__text {
+			font-size: 0.85rem;
+			text-align: left;
+		}
+	}
+	.gallery {
+		padding: 0;
+		&__title {
+			font-size: 1.4rem;
+		}
+	}
+	.docs {
+		&__container {
+			background: linear-gradient(180deg, #FFFFFF 20%, $main-color 100%);
+			padding-top: 2rem;
+			padding-bottom: 0;
+		}
+		&__title {
+			font-size: 1.4rem;
+			color: $main-color;
+			text-align: center;
+			font-weight: 700;
+			margin-bottom: 0;
+		}
+		&__img {
+			display: block;
+			width: 40%;
+			margin: 0 auto;
+		}
+	}
+	.sorry {
+		padding-top: 0;
+		font-size: 0.85rem;
+		p:first-of-type {
+			text-align: center;
+			border: 1px solid red;
+		}
+	}
+	.attantion {
+		font-size: 1rem !important;
+		line-height: 1.2;
+		
+	}
+	.no_mgn {
+		margin-left: 0;
+	}
+	.smile {
+		display: none;
+	}
 }
 
 @media (min-width: 250px) and (max-width: 319px) {
@@ -603,12 +655,25 @@ p {
 			padding-right: 0.3rem;
 			padding-left: 0.3rem;
 		}
+		&__logo {
+			display: block;
+			margin: 0 auto;
+			width: 40%;
+		}
 		&__title {
 			font-size: 1.75rem;
+			text-align: center;
+			color: $title-color;
+			margin-bottom: 0;
 		}
 		&__text {
-			font-size: 1.2rem;
-			margin-bottom: 1.5rem;
+			font-size: 1.3rem;
+			text-align: center;
+		}
+		nav {
+			display: block;
+			width: 100%;
+			margin: 0 auto;
 		}
 		&__menu {
 			justify-content: space-between;
@@ -674,9 +739,13 @@ p {
 	}
 	.docs {
 		&__container {
-			background: linear-gradient(180deg, #FFFFFF 0%, $main-color 100%);
+			background: linear-gradient(180deg, #FFFFFF 10%, $main-color 100%);
 			padding-top: 0;
 			padding-bottom: 0;
+		}
+		&__title {
+			font-size: 1.4rem;
+			text-align: center;
 		}
 		&__img {
 			display: block;
