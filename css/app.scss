@@ -1,16 +1,16 @@
 @import "../css/docs_games.scss";
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@300;700;900&display=swap');
 
-$main-color: #1E90FF;//#FF7F00 #3CD0E8
+$main-color: #8f3d7a;//#FF7F00 #3CD0E8 #1E90FF #f0b6c7
 $title-color: #FFFFFF;//#FFD700
 
 /* specification */
 * { box-sizing: border-box; }
 body{
-	background: url(../img/body_winter_bg.png) 50% repeat-y;
+	background: url(../img/body_spring3_bg.png) 50% no-repeat;
 	background-attachment: fixed;
 	background-size: 100%;
-	background-color: #ccc;
+	background-color:#ffffcc;// #f0f7ff
 	font-family: 'Roboto', sans-serif;
 }
 ul, li{
@@ -113,7 +113,8 @@ p {
 		}
 	}
 	&__img {
-		width: 100%;
+		width: 150%;
+		margin-left: -70%;
 	}
 }
 
