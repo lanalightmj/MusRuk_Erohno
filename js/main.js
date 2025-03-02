@@ -1,30 +1,30 @@
 //carousel
-$('.carousel').carousel();
+// $('.carousel').carousel();
 
-//marquee
-$('.marquee').marquee({
-	//duration in milliseconds of the marquee
-	duration: 15000,
-	//gap in pixels between the tickers
-	gap: 70,
-	//time in milliseconds before the marquee will start animating
-	delayBeforeStart: 0,
-	//'left' or 'right'
-	direction: 'left',
-	//true or false - should the marquee be duplicated to show an effect of continues flow
-	duplicated: true
-});
+ //marquee
+ $('.marquee').marquee({
+ 	//duration in milliseconds of the marquee
+ 	duration: 15000,
+ 	//gap in pixels between the tickers
+ 	gap: 70,
+ 	//time in milliseconds before the marquee will start animating
+ 	delayBeforeStart: 0,
+ 	//'left' or 'right'
+ 	direction: 'left',
+ 	//true or false - should the marquee be duplicated to show an effect of continues flow
+ 	duplicated: true
+ });
 
 //.isotope
-/*// init Isotope
-var $grid = $('.grid').isotope({
-  // options
-});
-// filter items on button click
-$('.filter-button-group').on( 'click', 'button', function() {
-  var filterValue = $(this).attr('data-filter');
-  $grid.isotope({ filter: filterValue });
-});*/
+ // init Isotope
+ var $grid = $('.grid').isotope({
+   // options
+ });
+ // filter items on button click
+ $('.filter-button-group').on( 'click', 'button', function() {
+   var filterValue = $(this).attr('data-filter');
+   $grid.isotope({ filter: filterValue });
+ });
 
 // init Isotope
 // init Isotope
@@ -106,20 +106,20 @@ $(function() {
 		}
 	};
 
-//Обработка события нажатия кнопки 'SHOW MODAL'
-$(".showModal").on('click',function(e) {
-	var id = $(this).data('id');
-	var content = $('#cont'+id).html();
-	modal.showModal(content);
-});
-//Обработка события клика на само модульное окно
-$('#modal').on('click',function(e) {
+  //Обработка события нажатия кнопки 'SHOW MODAL'
+  $(".showModal").on('click',function(e) {
+	  var id = $(this).data('id');
+	  var content = $('#cont'+id).html();
+	  modal.showModal(content);
+  });
+  //Обработка события клика на само модульное окно
+  $('#modal').on('click',function(e) {
 
-	if ($(e.target).attr('id') === 'modal' || $(e.target).hasClass('closeModal')) { //Проверка объекта клика
-		modal.hideModal();
-	} else {
-		return false;
-	}
-})
+	  if ($(e.target).attr('id') === 'modal' || $(e.target).hasClass('closeModal')) { //Проверка объекта клика
+		  modal.hideModal();
+	  } else {
+		  return false;
+	  }
+  })
 
 });
